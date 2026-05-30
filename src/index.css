@@ -17,23 +17,23 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #fff0f3; /* pink-light */
+  background: #fff8f8; /* red-light */
 }
 ::-webkit-scrollbar-thumb {
-  background: #81c784; /* green-medium */
+  background: #fbc02d; /* yellow-DEFAULT */
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #880e4f; /* pink-dark */
+  background: #7f0000; /* red-dark */
 }
 
 /* Traditional glow animations */
 .gold-text-glow {
-  text-shadow: 0 0 10px rgba(233, 30, 99, 0.4); /* pink glow */
+  text-shadow: 0 0 10px rgba(211, 47, 47, 0.4); /* red glow */
 }
 
 .gold-border-glow {
-  box-shadow: 0 0 15px rgba(129, 199, 132, 0.3); /* green glow */
+  box-shadow: 0 0 15px rgba(251, 192, 45, 0.3); /* yellow glow */
 }
 
 /* Diya flame flicker animation */

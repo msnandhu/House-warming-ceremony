@@ -107,40 +107,40 @@ export default function LocationMap() {
             {/* Custom SVG Roadmap */}
             <svg className="absolute inset-0 w-full h-full p-8" viewBox="0 0 100 100" fill="none" stroke="currentColor">
               {/* ECR highway road lines */}
-              <path d="M -10 30 C 30 30 70 45 110 45" stroke="#0c2b11" strokeWidth="12" strokeLinecap="round" />
-              <path d="M -10 30 C 30 30 70 45 110 45" stroke="#81c784" strokeWidth="0.5" strokeDasharray="3 3" />
+              <path d="M -10 30 C 30 30 70 45 110 45" stroke="#3a0000" strokeWidth="12" strokeLinecap="round" />
+              <path d="M -10 30 C 30 30 70 45 110 45" stroke="#fbc02d" strokeWidth="0.5" strokeDasharray="3 3" />
               
               {/* Highway Label */}
-              <text x="15" y="24" fill="#81c784" fontSize="3" fontFamily="Cinzel" letterSpacing="0.5">Rameswaram - Madurai Road (ECR)</text>
+              <text x="15" y="24" fill="#fbc02d" fontSize="3" fontFamily="Cinzel" letterSpacing="0.5">Rameswaram - Madurai Road (ECR)</text>
 
               {/* Side Road to House */}
-              <path d="M 60 41 L 60 75 L 75 75" stroke="#0c2b11" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M 60 41 L 60 75 L 75 75" stroke="#3a0000" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />
               
               {/* Inji Tea Shop Landmark Node */}
               <g transform="translate(53, 35)">
-                <circle cx="0" cy="0" r="4" fill="#e91e63" stroke="#81c784" strokeWidth="1" />
-                <text x="6" y="1" fill="#fff0f3" fontSize="3" fontFamily="Outfit" fontWeight="bold">Inji Tea Shop</text>
-                <text x="6" y="4" fill="#81c784" fontSize="2" fontFamily="Outfit">Landmark</text>
+                <circle cx="0" cy="0" r="4" fill="#d32f2f" stroke="#fbc02d" strokeWidth="1" />
+                <text x="6" y="1" fill="#fff8f8" fontSize="3" fontFamily="Outfit" fontWeight="bold">Inji Tea Shop</text>
+                <text x="6" y="4" fill="#fbc02d" fontSize="2" fontFamily="Outfit">Landmark</text>
               </g>
 
               {/* Sri Sudalee House Node */}
               <g transform="translate(75, 75)">
                 {/* Glowing ring */}
-                <circle cx="0" cy="0" r="8" fill="none" stroke="#81c784" strokeWidth="0.5" className="animate-pulse" />
+                <circle cx="0" cy="0" r="8" fill="none" stroke="#fbc02d" strokeWidth="0.5" className="animate-pulse" />
                 {/* House pin */}
-                <circle cx="0" cy="0" r="4" fill="#81c784" stroke="#e91e63" strokeWidth="1.5" />
-                <path d="M -2 -1 L 0 -3 L 2 -1 L 2 2 L -2 2 Z" fill="#e91e63" />
-                <rect x="-1" y="-1" width="2" height="3" fill="#81c784" />
-                <text x="-12" y="9" fill="#81c784" fontSize="4.5" fontFamily="Cinzel" fontWeight="bold">SRI SUDALEE</text>
+                <circle cx="0" cy="0" r="4" fill="#fbc02d" stroke="#d32f2f" strokeWidth="1.5" />
+                <path d="M -2 -1 L 0 -3 L 2 -1 L 2 2 L -2 2 Z" fill="#d32f2f" />
+                <rect x="-1" y="-1" width="2" height="3" fill="#fbc02d" />
+                <text x="-12" y="9" fill="#fbc02d" fontSize="4.5" fontFamily="Cinzel" fontWeight="bold">SRI SUDALEE</text>
               </g>
 
               {/* Direction Indicator Arrow */}
-              <path d="M 58 45 L 58 60" stroke="#fff0f3" strokeWidth="0.5" markerEnd="url(#arrow)" />
+              <path d="M 58 45 L 58 60" stroke="#fff8f8" strokeWidth="0.5" markerEnd="url(#arrow)" />
               
               {/* SVG marker definitions */}
               <defs>
                 <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                  <path d="M 0 0 L 10 5 L 0 10 z" fill="#fff0f3" />
+                  <path d="M 0 0 L 10 5 L 0 10 z" fill="#fff8f8" />
                 </marker>
               </defs>
             </svg>

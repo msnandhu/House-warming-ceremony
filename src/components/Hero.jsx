@@ -17,12 +17,12 @@ export default function Hero({ onEnterMuttram }) {
   return (
     <section 
       id="hero" 
-      className="relative w-full h-[100dvh] overflow-hidden flex flex-col justify-between items-center text-center p-4 sm:p-12 text-white bg-gradient-to-b from-[#880e4f] via-[#ec407a] to-[#0c2b11]"
+      className="relative w-full h-[100dvh] overflow-hidden flex flex-col justify-between items-center text-center p-4 sm:p-12 text-white bg-gradient-to-b from-[#7f0000] via-[#d32f2f] to-[#3a0000]"
     >
       
       {/* 1. SUNSET SUN DISK & GLOW (From the Photo) */}
       <div 
-        className="absolute w-20 h-20 sm:w-36 sm:h-36 rounded-full bg-white shadow-[0_0_50px_rgba(255,255,255,0.8),_0_0_100px_rgba(129,199,132,0.6)] pointer-events-none"
+        className="absolute w-20 h-20 sm:w-36 sm:h-36 rounded-full bg-white shadow-[0_0_50px_rgba(255,255,255,0.8),_0_0_100px_rgba(251,192,45,0.7)] pointer-events-none"
         style={{
           top: '18%',
           left: '15%',
@@ -32,7 +32,7 @@ export default function Hero({ onEnterMuttram }) {
       {/* 2. SVG HOUSE & FENCE SILHOUETTE (From the Photo) */}
       <div className="absolute bottom-0 left-0 w-full h-[28vh] sm:h-[32vh] pointer-events-none select-none z-10 overflow-hidden">
         <svg 
-          className="w-full h-full text-[#0c2b11] fill-current" 
+          className="w-full h-full text-[#3a0000] fill-current" 
           viewBox="0 0 1000 300" 
           preserveAspectRatio="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -46,36 +46,36 @@ export default function Hero({ onEnterMuttram }) {
           {/* Left sloped roof (hipped) */}
           <path d="M 60 180 L 150 120 L 760 120 L 850 180 Z" />
           {/* Tiled roof ridges representation */}
-          <line x1="150" y1="120" x2="60" y2="180" stroke="#061a0a" strokeWidth="2" opacity="0.5" />
-          <line x1="760" y1="120" x2="850" y2="180" stroke="#061a0a" strokeWidth="2" opacity="0.5" />
+          <line x1="150" y1="120" x2="60" y2="180" stroke="#1f0000" strokeWidth="2" opacity="0.5" />
+          <line x1="760" y1="120" x2="850" y2="180" stroke="#1f0000" strokeWidth="2" opacity="0.5" />
 
           {/* Stepped secondary roof on the right side */}
           <rect x="730" y="195" width="220" height="60" />
           <path d="M 720 195 L 760 145 L 910 145 L 950 195 Z" />
-          <line x1="760" y1="145" x2="720" y2="195" stroke="#061a0a" strokeWidth="2" opacity="0.5" />
-          <line x1="910" y1="145" x2="950" y2="195" stroke="#061a0a" strokeWidth="2" opacity="0.5" />
+          <line x1="760" y1="145" x2="720" y2="195" stroke="#1f0000" strokeWidth="2" opacity="0.5" />
+          <line x1="910" y1="145" x2="950" y2="195" stroke="#1f0000" strokeWidth="2" opacity="0.5" />
 
           {/* Pillars support (cutout style verandah porch) */}
           {/* Verandah floor deck */}
-          <rect x="70" y="248" width="880" height="10" fill="#061a0a" />
+          <rect x="70" y="248" width="880" height="10" fill="#1f0000" />
           {/* Pillars columns */}
           {[90, 160, 230, 300, 370, 440, 510, 580, 650, 720, 790, 860, 930].map((cx, idx) => (
-            <rect key={idx} x={cx} y="180" width="8" height="68" fill="#0c2b11" />
+            <rect key={idx} x={cx} y="180" width="8" height="68" fill="#3a0000" />
           ))}
 
           {/* Foreground wire fence posts */}
           {[40, 180, 320, 460, 600, 740, 880, 960].map((fx, idx) => (
             <g key={idx}>
               {/* Post shaft */}
-              <rect x={fx} y="225" width="6" height="75" fill="#061a0a" />
+              <rect x={fx} y="225" width="6" height="75" fill="#1f0000" />
               {/* Post top cap */}
-              <polygon points={`${fx-3},225 ${fx+9},225 ${fx+3},220`} fill="#061a0a" />
+              <polygon points={`${fx-3},225 ${fx+9},225 ${fx+3},220`} fill="#1f0000" />
             </g>
           ))}
 
           {/* Horizontal fence wires */}
-          <line x1="0" y1="240" x2="1000" y2="240" stroke="#061a0a" strokeWidth="1" />
-          <line x1="0" y1="260" x2="1000" y2="260" stroke="#061a0a" strokeWidth="1" />
+          <line x1="0" y1="240" x2="1000" y2="240" stroke="#1f0000" strokeWidth="1" />
+          <line x1="0" y1="260" x2="1000" y2="260" stroke="#1f0000" strokeWidth="1" />
         </svg>
       </div>
 

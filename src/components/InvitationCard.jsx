@@ -13,14 +13,14 @@ export default function InvitationCard() {
 
     // 1. Draw Silk Brocade Gradient Background
     const grad = ctx.createLinearGradient(0, 0, 800, 1200);
-    grad.addColorStop(0, '#880e4f'); // Pink dark
-    grad.addColorStop(0.5, '#0c2b11'); // Green darker
-    grad.addColorStop(1, '#880e4f');
+    grad.addColorStop(0, '#7f0000'); // Maroon red
+    grad.addColorStop(0.5, '#3a0000'); // Deep dark red
+    grad.addColorStop(1, '#7f0000');
     ctx.fillStyle = grad;
     ctx.fillRect(0, 0, 800, 1200);
 
     // 2. Draw Subtle Concentric Mandala Watermarks
-    ctx.strokeStyle = 'rgba(129, 199, 132, 0.08)';
+    ctx.strokeStyle = 'rgba(251, 192, 45, 0.08)';
     ctx.lineWidth = 1.5;
     ctx.beginPath();
     ctx.arc(400, 600, 180, 0, Math.PI * 2);
@@ -30,17 +30,17 @@ export default function InvitationCard() {
     ctx.stroke();
 
     // 3. Draw Outer Gold Border Frame
-    ctx.strokeStyle = '#81c784';
+    ctx.strokeStyle = '#fbc02d';
     ctx.lineWidth = 6;
     ctx.strokeRect(25, 25, 750, 1150);
 
     // Inner thin border
-    ctx.strokeStyle = 'rgba(129, 199, 132, 0.4)';
+    ctx.strokeStyle = 'rgba(251, 192, 45, 0.4)';
     ctx.lineWidth = 1.5;
     ctx.strokeRect(33, 33, 734, 1134);
 
     // 4. Draw Corner Accents
-    ctx.fillStyle = '#2e7d32';
+    ctx.fillStyle = '#f57f17';
     // Top-Left Corner
     ctx.fillRect(25, 25, 40, 6);
     ctx.fillRect(25, 25, 6, 40);
@@ -55,7 +55,7 @@ export default function InvitationCard() {
     ctx.fillRect(769, 1135, 6, 40);
 
     // 5. Draw Repeating Temple Gopuram Border Along Top & Bottom
-    ctx.fillStyle = '#81c784';
+    ctx.fillStyle = '#fbc02d';
     ctx.beginPath();
     for (let x = 40; x <= 740; x += 20) {
       // Top border
@@ -70,9 +70,9 @@ export default function InvitationCard() {
     ctx.fill();
 
     // 6. Draw Lotus Motif in Top Center
-    ctx.strokeStyle = '#ec407a';
+    ctx.strokeStyle = '#d32f2f';
     ctx.lineWidth = 2.5;
-    ctx.fillStyle = 'rgba(236, 64, 122, 0.15)';
+    ctx.fillStyle = 'rgba(211, 47, 47, 0.15)';
     
     // Draw Center Petal
     ctx.beginPath();
@@ -99,38 +99,38 @@ export default function InvitationCard() {
     ctx.textAlign = 'center';
     
     // Invocation
-    ctx.fillStyle = '#ff80ab';
+    ctx.fillStyle = '#ff8a80';
     ctx.font = 'bold 15px Georgia, serif';
     ctx.fillText('ॐ Sri Varahi Amman Thunai ॐ', 400, 190);
 
     // Title
-    ctx.fillStyle = '#fff0f3';
+    ctx.fillStyle = '#fff8f8';
     ctx.font = 'bold 44px Georgia, serif';
     ctx.fillText('Griha Pravesam', 400, 250);
 
     // Blessing Quote
-    ctx.fillStyle = '#fce4ec';
+    ctx.fillStyle = '#ffebee';
     ctx.font = 'italic 16px Arial, sans-serif';
     ctx.fillText('"With the divine blessings of our ancestors and almighty, we cordially"', 400, 305);
     ctx.fillText('invite you to join us in celebrating the house warming ceremony', 400, 328);
     ctx.fillText('of our new ancestral home.', 400, 351);
 
     // Welcoming you to
-    ctx.fillStyle = '#81c784';
+    ctx.fillStyle = '#fbc02d';
     ctx.font = 'bold 13px Arial, sans-serif';
     ctx.fillText('WELCOMING YOU TO', 400, 410);
 
     // Sri Sudalee
-    ctx.fillStyle = '#fff0f3';
+    ctx.fillStyle = '#fff8f8';
     ctx.font = 'bold 36px Georgia, serif';
     ctx.fillText('" SRI SUDALEE "', 400, 460);
 
     // Draw Event Details Box
-    ctx.strokeStyle = 'rgba(129, 199, 132, 0.4)';
+    ctx.strokeStyle = 'rgba(251, 192, 45, 0.4)';
     ctx.lineWidth = 1.5;
     ctx.strokeRect(100, 505, 600, 285); // Increased height to fit address
 
-    ctx.fillStyle = '#81c784';
+    ctx.fillStyle = '#fbc02d';
     ctx.font = 'bold 16px Georgia, serif';
     ctx.fillText('🗓️ DATE & TIME', 250, 540);
     ctx.fillText('🪔 MUHURTHAM', 550, 540);
@@ -140,35 +140,35 @@ export default function InvitationCard() {
     ctx.fillText('Sunday, June 7, 2026', 250, 570);
     ctx.fillText('6:00 AM – 7:30 AM', 550, 570);
 
-    ctx.fillStyle = '#fce4ec';
+    ctx.fillStyle = '#ffebee';
     ctx.font = '13px Arial, sans-serif';
     ctx.fillText('Tamil Month: Vaikasi 24', 250, 595);
     ctx.fillText('Morning Valarpirai', 550, 595);
 
     // Feast timings
-    ctx.fillStyle = '#81c784';
+    ctx.fillStyle = '#fbc02d';
     ctx.font = 'bold 16px Georgia, serif';
     ctx.fillText('🍛 FEAST TIMINGS', 400, 642);
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 15px Arial, sans-serif';
     ctx.fillText('Sumptuous Traditional South Indian Feast (Lunch)', 400, 667);
-    ctx.fillStyle = '#fce4ec';
+    ctx.fillStyle = '#ffebee';
     ctx.font = '13px Arial, sans-serif';
     ctx.fillText('11:30 AM onwards at the Muttram Courtyard', 400, 687);
 
     // Venue Address on canvas
-    ctx.fillStyle = '#81c784';
+    ctx.fillStyle = '#fbc02d';
     ctx.font = 'bold 16px Georgia, serif';
     ctx.fillText('📍 VENUE ADDRESS', 400, 730);
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 15px Arial, sans-serif';
     ctx.fillText('Madakottan ECR, Ramanathapuram', 400, 755);
-    ctx.fillStyle = '#fce4ec';
+    ctx.fillStyle = '#ffebee';
     ctx.font = '13px Arial, sans-serif';
     ctx.fillText('Rameswaram – Madurai Main Road (Behind Inji Tea Shop) – 623503', 400, 775);
 
     // Host Header (Shifted down due to larger details box)
-    ctx.fillStyle = '#81c784';
+    ctx.fillStyle = '#fbc02d';
     ctx.font = 'bold 13px Georgia, serif';
     ctx.fillText('CORDIALLY INVITED BY', 400, 835);
 
@@ -176,7 +176,7 @@ export default function InvitationCard() {
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 16px Arial, sans-serif';
     ctx.fillText('Dr. Mahendran G. ME, PhD', 400, 875);
-    ctx.fillStyle = '#81c784';
+    ctx.fillStyle = '#fbc02d';
     ctx.font = 'bold 11px Georgia, serif';
     ctx.fillText('HoD of ECE, Syed Ammal Engineering College', 400, 897);
 
@@ -184,7 +184,7 @@ export default function InvitationCard() {
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 16px Arial, sans-serif';
     ctx.fillText('Mrs. Shyni S. L. MA, MPhil, B.Ed', 400, 950);
-    ctx.fillStyle = '#81c784';
+    ctx.fillStyle = '#fbc02d';
     ctx.font = 'bold 11px Georgia, serif';
     ctx.fillText('HoD of English, Velumanoharan Arts and Science College for Women', 400, 972);
 
@@ -205,8 +205,8 @@ export default function InvitationCard() {
       ctx.bezierCurveTo(dx + 5, dy - 2, dx + 5, dy - 8, dx, dy - 20);
       ctx.fill();
 
-      // Ceramic Green Body
-      ctx.fillStyle = '#2e7d32';
+      // Ceramic Saffron Body
+      ctx.fillStyle = '#f57f17';
       ctx.beginPath();
       ctx.moveTo(dx - 22, dy);
       ctx.quadraticCurveTo(dx - 22, dy + 18, dx, dy + 18);
@@ -214,7 +214,7 @@ export default function InvitationCard() {
       ctx.quadraticCurveTo(dx, dy + 8, dx - 22, dy);
       ctx.fill();
 
-      ctx.fillStyle = '#0c2b11';
+      ctx.fillStyle = '#3a0000';
       ctx.beginPath();
       ctx.ellipse(dx, dy + 2, 22, 4, 0, 0, Math.PI * 2);
       ctx.fill();

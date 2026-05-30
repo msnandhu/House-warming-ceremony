@@ -8,46 +8,46 @@ export default {
     extend: {
       colors: {
         pink: {
-          light: '#fff0f3',
-          soft: '#fce4ec',
-          medium: '#f8bbd0',
-          DEFAULT: '#e91e63',
-          dark: '#880e4f',
+          light: '#fff8f8', // soft red background
+          soft: '#ffebee', // pastel red
+          medium: '#ffcdd2', // medium pastel red
+          DEFAULT: '#d32f2f', // rich traditional red
+          dark: '#7f0000', // deep maroon
         },
         green: {
-          light: '#e8f5e9',
-          medium: '#a5d6a7',
-          DEFAULT: '#81c784',
-          dark: '#2e7d32',
-          darker: '#0c2b11',
+          light: '#fffde7', // yellow-light
+          medium: '#ffe082', // yellow-medium
+          DEFAULT: '#fbc02d', // yellow DEFAULT
+          dark: '#f57f17', // yellow dark (saffron)
+          darker: '#3a0000', // deep dark red (for headers/footers)
         },
         terracotta: {
-          light: '#ff80ab', // pink-accent
-          DEFAULT: '#e91e63', // pink-DEFAULT
-          dark: '#880e4f', // pink-dark
+          light: '#ff8a80',
+          DEFAULT: '#d32f2f',
+          dark: '#7f0000',
         },
         gold: {
-          light: '#a5d6a7', // light green / mint
-          DEFAULT: '#81c784', // light green DEFAULT
-          dark: '#2e7d32', // green-dark
-          goldLight: '#f3d06b', // original gold preserved for traditional highlights
+          light: '#ffe082', // yellow-medium
+          DEFAULT: '#fbc02d', // yellow DEFAULT
+          dark: '#f57f17', // yellow dark (saffron)
+          goldLight: '#f3d06b',
           goldDEFAULT: '#d4af37',
           goldDark: '#aa7c11',
         },
         beige: {
-          light: '#fff0f3', // pink-light
-          DEFAULT: '#fce4ec', // pink-soft
-          dark: '#f8bbd0', // pink-medium
+          light: '#fff8f8',
+          DEFAULT: '#ffebee',
+          dark: '#ffcdd2',
         },
         wood: {
-          light: '#81c784', // green-medium
-          DEFAULT: '#2e7d32', // green-dark
-          dark: '#0c2b11', // green-darker
+          light: '#ffe082',
+          DEFAULT: '#f57f17',
+          dark: '#3a0000',
         },
         glow: {
-          light: '#ff80ab', // pink glow light
-          DEFAULT: '#e91e63', // pink glow
-          dark: '#880e4f', // pink glow dark
+          light: '#ff8a80',
+          DEFAULT: '#d32f2f',
+          dark: '#7f0000',
         }
       },
       fontFamily: {
@@ -55,11 +55,11 @@ export default {
         outfit: ['Outfit', 'sans-serif'],
       },
       backgroundImage: {
-        'silk-pattern': "radial-gradient(circle, rgba(233,30,99,0.1) 1px, transparent 1px)",
+        'silk-pattern': "radial-gradient(circle, rgba(211,47,47,0.1) 1px, transparent 1px)",
       },
       boxShadow: {
-        'gold-glow': '0 0 15px rgba(129, 199, 132, 0.4)',
-        'lamp-glow': '0 0 25px rgba(233, 30, 99, 0.6)',
+        'gold-glow': '0 0 15px rgba(251, 192, 45, 0.4)',
+        'lamp-glow': '0 0 25px rgba(211, 47, 47, 0.6)',
       }
     },
   },
