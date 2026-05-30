@@ -13,14 +13,14 @@ export default function InvitationCard() {
 
     // 1. Draw Silk Brocade Gradient Background
     const grad = ctx.createLinearGradient(0, 0, 800, 1200);
-    grad.addColorStop(0, '#5a1208'); // Terracotta dark
-    grad.addColorStop(0.5, '#2b1008'); // Wood dark
-    grad.addColorStop(1, '#5a1208');
+    grad.addColorStop(0, '#880e4f'); // Pink dark
+    grad.addColorStop(0.5, '#0c2b11'); // Green darker
+    grad.addColorStop(1, '#880e4f');
     ctx.fillStyle = grad;
     ctx.fillRect(0, 0, 800, 1200);
 
     // 2. Draw Subtle Concentric Mandala Watermarks
-    ctx.strokeStyle = 'rgba(212, 175, 55, 0.06)';
+    ctx.strokeStyle = 'rgba(129, 199, 132, 0.08)';
     ctx.lineWidth = 1.5;
     ctx.beginPath();
     ctx.arc(400, 600, 180, 0, Math.PI * 2);
@@ -30,17 +30,17 @@ export default function InvitationCard() {
     ctx.stroke();
 
     // 3. Draw Outer Gold Border Frame
-    ctx.strokeStyle = '#d4af37';
+    ctx.strokeStyle = '#81c784';
     ctx.lineWidth = 6;
     ctx.strokeRect(25, 25, 750, 1150);
 
     // Inner thin border
-    ctx.strokeStyle = 'rgba(212, 175, 55, 0.4)';
+    ctx.strokeStyle = 'rgba(129, 199, 132, 0.4)';
     ctx.lineWidth = 1.5;
     ctx.strokeRect(33, 33, 734, 1134);
 
     // 4. Draw Corner Accents
-    ctx.fillStyle = '#aa7c11';
+    ctx.fillStyle = '#2e7d32';
     // Top-Left Corner
     ctx.fillRect(25, 25, 40, 6);
     ctx.fillRect(25, 25, 6, 40);
@@ -55,7 +55,7 @@ export default function InvitationCard() {
     ctx.fillRect(769, 1135, 6, 40);
 
     // 5. Draw Repeating Temple Gopuram Border Along Top & Bottom
-    ctx.fillStyle = '#d4af37';
+    ctx.fillStyle = '#81c784';
     ctx.beginPath();
     for (let x = 40; x <= 740; x += 20) {
       // Top border
@@ -70,9 +70,9 @@ export default function InvitationCard() {
     ctx.fill();
 
     // 6. Draw Lotus Motif in Top Center
-    ctx.strokeStyle = '#d4af37';
+    ctx.strokeStyle = '#ec407a';
     ctx.lineWidth = 2.5;
-    ctx.fillStyle = 'rgba(212, 175, 55, 0.1)';
+    ctx.fillStyle = 'rgba(236, 64, 122, 0.15)';
     
     // Draw Center Petal
     ctx.beginPath();
@@ -99,38 +99,38 @@ export default function InvitationCard() {
     ctx.textAlign = 'center';
     
     // Invocation
-    ctx.fillStyle = '#d4af37';
+    ctx.fillStyle = '#ff80ab';
     ctx.font = 'bold 15px Georgia, serif';
     ctx.fillText('ॐ Sri Varahi Amman Thunai ॐ', 400, 190);
 
     // Title
-    ctx.fillStyle = '#ffffff';
+    ctx.fillStyle = '#fff0f3';
     ctx.font = 'bold 44px Georgia, serif';
     ctx.fillText('Griha Pravesam', 400, 250);
 
     // Blessing Quote
-    ctx.fillStyle = '#f5ebd5';
+    ctx.fillStyle = '#fce4ec';
     ctx.font = 'italic 16px Arial, sans-serif';
     ctx.fillText('"With the divine blessings of our ancestors and almighty, we cordially"', 400, 305);
     ctx.fillText('invite you to join us in celebrating the house warming ceremony', 400, 328);
     ctx.fillText('of our new ancestral home.', 400, 351);
 
     // Welcoming you to
-    ctx.fillStyle = '#d4af37';
+    ctx.fillStyle = '#81c784';
     ctx.font = 'bold 13px Arial, sans-serif';
     ctx.fillText('WELCOMING YOU TO', 400, 410);
 
     // Sri Sudalee
-    ctx.fillStyle = '#ffffff';
+    ctx.fillStyle = '#fff0f3';
     ctx.font = 'bold 36px Georgia, serif';
     ctx.fillText('" SRI SUDALEE "', 400, 460);
 
     // Draw Event Details Box
-    ctx.strokeStyle = 'rgba(212, 175, 55, 0.4)';
+    ctx.strokeStyle = 'rgba(129, 199, 132, 0.4)';
     ctx.lineWidth = 1.5;
     ctx.strokeRect(100, 505, 600, 285); // Increased height to fit address
 
-    ctx.fillStyle = '#d4af37';
+    ctx.fillStyle = '#81c784';
     ctx.font = 'bold 16px Georgia, serif';
     ctx.fillText('🗓️ DATE & TIME', 250, 540);
     ctx.fillText('🪔 MUHURTHAM', 550, 540);
@@ -140,35 +140,35 @@ export default function InvitationCard() {
     ctx.fillText('Sunday, June 7, 2026', 250, 570);
     ctx.fillText('6:00 AM – 7:30 AM', 550, 570);
 
-    ctx.fillStyle = '#e6d5b8';
+    ctx.fillStyle = '#fce4ec';
     ctx.font = '13px Arial, sans-serif';
     ctx.fillText('Tamil Month: Vaikasi 24', 250, 595);
     ctx.fillText('Morning Valarpirai', 550, 595);
 
     // Feast timings
-    ctx.fillStyle = '#d4af37';
+    ctx.fillStyle = '#81c784';
     ctx.font = 'bold 16px Georgia, serif';
     ctx.fillText('🍛 FEAST TIMINGS', 400, 642);
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 15px Arial, sans-serif';
     ctx.fillText('Sumptuous Traditional South Indian Feast (Lunch)', 400, 667);
-    ctx.fillStyle = '#e6d5b8';
+    ctx.fillStyle = '#fce4ec';
     ctx.font = '13px Arial, sans-serif';
     ctx.fillText('11:30 AM onwards at the Muttram Courtyard', 400, 687);
 
     // Venue Address on canvas
-    ctx.fillStyle = '#d4af37';
+    ctx.fillStyle = '#81c784';
     ctx.font = 'bold 16px Georgia, serif';
     ctx.fillText('📍 VENUE ADDRESS', 400, 730);
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 15px Arial, sans-serif';
     ctx.fillText('Madakottan ECR, Ramanathapuram', 400, 755);
-    ctx.fillStyle = '#e6d5b8';
+    ctx.fillStyle = '#fce4ec';
     ctx.font = '13px Arial, sans-serif';
     ctx.fillText('Rameswaram – Madurai Main Road (Behind Inji Tea Shop) – 623503', 400, 775);
 
     // Host Header (Shifted down due to larger details box)
-    ctx.fillStyle = '#d4af37';
+    ctx.fillStyle = '#81c784';
     ctx.font = 'bold 13px Georgia, serif';
     ctx.fillText('CORDIALLY INVITED BY', 400, 835);
 
@@ -176,7 +176,7 @@ export default function InvitationCard() {
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 16px Arial, sans-serif';
     ctx.fillText('Dr. Mahendran G. ME, PhD', 400, 875);
-    ctx.fillStyle = '#d4af37';
+    ctx.fillStyle = '#81c784';
     ctx.font = 'bold 11px Georgia, serif';
     ctx.fillText('HoD of ECE, Syed Ammal Engineering College', 400, 897);
 
@@ -184,7 +184,7 @@ export default function InvitationCard() {
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 16px Arial, sans-serif';
     ctx.fillText('Mrs. Shyni S. L. MA, MPhil, B.Ed', 400, 950);
-    ctx.fillStyle = '#d4af37';
+    ctx.fillStyle = '#81c784';
     ctx.font = 'bold 11px Georgia, serif';
     ctx.fillText('HoD of English, Velumanoharan Arts and Science College for Women', 400, 972);
 
@@ -205,8 +205,8 @@ export default function InvitationCard() {
       ctx.bezierCurveTo(dx + 5, dy - 2, dx + 5, dy - 8, dx, dy - 20);
       ctx.fill();
 
-      // Brass Body
-      ctx.fillStyle = '#d4af37';
+      // Ceramic Green Body
+      ctx.fillStyle = '#2e7d32';
       ctx.beginPath();
       ctx.moveTo(dx - 22, dy);
       ctx.quadraticCurveTo(dx - 22, dy + 18, dx, dy + 18);
@@ -214,7 +214,7 @@ export default function InvitationCard() {
       ctx.quadraticCurveTo(dx, dy + 8, dx - 22, dy);
       ctx.fill();
 
-      ctx.fillStyle = '#aa7c11';
+      ctx.fillStyle = '#0c2b11';
       ctx.beginPath();
       ctx.ellipse(dx, dy + 2, 22, 4, 0, 0, Math.PI * 2);
       ctx.fill();
@@ -231,40 +231,40 @@ export default function InvitationCard() {
   };
 
   return (
-    <section id="invitation" className="relative min-h-screen py-24 flex items-center justify-center bg-wood-dark px-4 overflow-hidden">
+    <section id="invitation" className="relative min-h-screen py-24 flex items-center justify-center bg-green-darker px-4 overflow-hidden">
       {/* Silk texture overlay using CSS gradients and vector symbols */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-terracotta-dark via-wood-dark to-terracotta-dark opacity-90" />
+      <div className="absolute inset-0 bg-gradient-to-tr from-pink-dark via-green-darker to-pink-dark opacity-95" />
       
       {/* Subtle traditional grid/silk brocade pattern */}
       <div 
         className="absolute inset-0 opacity-10 pointer-events-none"
         style={{
-          backgroundImage: `radial-gradient(#d4af37 1px, transparent 0), radial-gradient(#d4af37 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(#81c784 1px, transparent 0), radial-gradient(#81c784 1px, transparent 0)`,
           backgroundSize: '32px 32px',
           backgroundPosition: '0 0, 16px 16px'
         }}
       />
       
-      {/* Giant floating gold mandalas in background */}
-      <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full border border-gold/10 flex items-center justify-center animate-slow-spin opacity-30 pointer-events-none">
-        <div className="w-80 h-80 rounded-full border border-gold/15 flex items-center justify-center">
-          <div className="w-64 h-64 rounded-full border border-dashed border-gold/20" />
+      {/* Giant floating green mandalas in background */}
+      <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full border border-green-medium/10 flex items-center justify-center animate-slow-spin opacity-30 pointer-events-none">
+        <div className="w-80 h-80 rounded-full border border-green-medium/15 flex items-center justify-center">
+          <div className="w-64 h-64 rounded-full border border-dashed border-green-medium/20" />
         </div>
       </div>
-      <div className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full border border-gold/10 flex items-center justify-center animate-slow-spin opacity-30 pointer-events-none" style={{ animationDirection: 'reverse' }}>
-        <div className="w-80 h-80 rounded-full border border-gold/15 flex items-center justify-center">
-          <div className="w-64 h-64 rounded-full border border-dashed border-gold/20" />
+      <div className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full border border-green-medium/10 flex items-center justify-center animate-slow-spin opacity-30 pointer-events-none" style={{ animationDirection: 'reverse' }}>
+        <div className="w-80 h-80 rounded-full border border-green-medium/15 flex items-center justify-center">
+          <div className="w-64 h-64 rounded-full border border-dashed border-green-medium/20" />
         </div>
       </div>
 
       {/* Main Container */}
-      <div id="invitation-card-container" className="relative z-10 w-full max-w-2xl bg-gradient-to-b from-beige-light via-beige to-beige-dark border-4 border-gold p-6 sm:p-12 rounded-lg shadow-2xl gold-border-glow mx-auto text-center">
+      <div id="invitation-card-container" className="relative z-10 w-full max-w-2xl bg-gradient-to-b from-pink-light via-pink-soft to-pink-medium border-4 border-green-medium p-4 sm:p-12 rounded-lg shadow-2xl gold-border-glow mx-auto text-center">
         
-        {/* Corner Gold Accents */}
-        <div className="absolute top-0 left-0 w-12 h-12 border-t-4 border-l-4 border-gold-dark rounded-tl-sm pointer-events-none" />
-        <div className="absolute top-0 right-0 w-12 h-12 border-t-4 border-r-4 border-gold-dark rounded-tr-sm pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-12 h-12 border-b-4 border-l-4 border-gold-dark rounded-bl-sm pointer-events-none" />
-        <div className="absolute bottom-0 right-0 w-12 h-12 border-b-4 border-r-4 border-gold-dark rounded-br-sm pointer-events-none" />
+        {/* Corner Green Accents */}
+        <div className="absolute top-0 left-0 w-12 h-12 border-t-4 border-l-4 border-green-dark rounded-tl-sm pointer-events-none" />
+        <div className="absolute top-0 right-0 w-12 h-12 border-t-4 border-r-4 border-green-dark rounded-tr-sm pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-12 h-12 border-b-4 border-l-4 border-green-dark rounded-bl-sm pointer-events-none" />
+        <div className="absolute bottom-0 right-0 w-12 h-12 border-b-4 border-r-4 border-green-dark rounded-br-sm pointer-events-none" />
 
         {/* Thoranam Garland across the top */}
         <div className="absolute top-2 left-2 right-2 overflow-hidden h-12 pointer-events-none">
@@ -273,76 +273,76 @@ export default function InvitationCard() {
 
         {/* Lotus Icon / Spiritual Header */}
         <div className="mt-8 flex justify-center">
-          <LotusMotif className="w-20 h-20 text-gold-dark drop-shadow-md" />
+          <LotusMotif className="w-20 h-20 text-green-dark drop-shadow-md" />
         </div>
 
         {/* Invocation Header */}
-        <p className="font-cinzel text-xs sm:text-sm text-terracotta-dark font-bold tracking-widest mt-4 uppercase">
+        <p className="font-cinzel text-xs sm:text-sm text-pink-dark font-bold tracking-widest mt-4 uppercase">
           ॐ Sri Varahi Amman Thunai ॐ
         </p>
         
-        <h2 className="font-cinzel text-3xl sm:text-5xl font-black text-terracotta-dark tracking-wide mt-3 drop-shadow-sm">
+        <h2 className="font-cinzel text-3xl sm:text-5xl font-black text-pink-dark tracking-wide mt-3 drop-shadow-sm">
           Griha Pravesam
         </h2>
         
-        <p className="font-outfit text-sm text-wood-light italic max-w-md mx-auto mt-3">
+        <p className="font-outfit text-sm text-green-dark italic max-w-md mx-auto mt-3">
           "With the divine blessings of our ancestors and almighty, we cordially invite you to join us in celebrating the house warming ceremony of our new ancestral home."
         </p>
 
         {/* House Name Display */}
-        <div className="my-8 py-3 border-y border-gold/40 max-w-sm mx-auto">
-          <p className="text-xs uppercase tracking-wider text-wood-light">Welcoming you to</p>
-          <h3 className="font-cinzel text-2xl sm:text-3xl font-extrabold text-gold-dark tracking-widest uppercase mt-1">
+        <div className="my-8 py-3 border-y border-green-medium/40 max-w-sm mx-auto">
+          <p className="text-xs uppercase tracking-wider text-green-dark">Welcoming you to</p>
+          <h3 className="font-cinzel text-2xl sm:text-3xl font-extrabold text-green-dark tracking-widest uppercase mt-1">
             " Sri Sudalee "
           </h3>
         </div>
 
         {/* Event Details Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8 text-left bg-beige-light/50 p-6 rounded-lg border border-gold/20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8 text-left bg-pink-light/50 p-4 sm:p-6 rounded-lg border border-green-medium/20">
           <div>
-            <h4 className="font-cinzel font-bold text-terracotta-dark border-b border-gold/30 pb-1 mb-2 tracking-wider">
+            <h4 className="font-cinzel font-bold text-pink-dark border-b border-green-medium/30 pb-1 mb-2 tracking-wider text-xs sm:text-sm">
               🗓️ DATE & TIME
             </h4>
-            <p className="font-outfit font-semibold text-wood-dark text-sm sm:text-base">
+            <p className="font-outfit font-semibold text-green-darker text-sm sm:text-base">
               Sunday, June 7, 2026
             </p>
-            <p className="font-outfit text-xs text-wood-light mt-1">
+            <p className="font-outfit text-xs text-green-dark mt-1">
               Tamil Month: Vaikasi 24
             </p>
           </div>
 
           <div>
-            <h4 className="font-cinzel font-bold text-terracotta-dark border-b border-gold/30 pb-1 mb-2 tracking-wider">
+            <h4 className="font-cinzel font-bold text-pink-dark border-b border-green-medium/30 pb-1 mb-2 tracking-wider text-xs sm:text-sm">
               🪔 MUHURTHAM
             </h4>
-            <p className="font-outfit font-semibold text-wood-dark text-sm sm:text-base">
+            <p className="font-outfit font-semibold text-green-darker text-sm sm:text-base">
               Auspicious Muhurtham: 6:00 AM – 7:30 AM
             </p>
-            <p className="font-outfit text-xs text-wood-light mt-1 font-medium">
+            <p className="font-outfit text-xs text-green-dark mt-1 font-medium">
               Morning (Vaikasi Month Valarpirai)
             </p>
           </div>
 
           <div className="md:col-span-2">
-            <h4 className="font-cinzel font-bold text-terracotta-dark border-b border-gold/30 pb-1 mb-2 tracking-wider">
+            <h4 className="font-cinzel font-bold text-pink-dark border-b border-green-medium/30 pb-1 mb-2 tracking-wider text-xs sm:text-sm">
               🍛 FEAST TIMINGS
             </h4>
-            <p className="font-outfit font-semibold text-wood-dark text-sm sm:text-base">
+            <p className="font-outfit font-semibold text-green-darker text-sm sm:text-base">
               Sumptuous Traditional South Indian Feast (Lunch):
             </p>
-            <p className="font-outfit text-sm text-wood-light mt-0.5">
+            <p className="font-outfit text-sm text-green-dark mt-0.5">
               11:30 AM onwards at the Muttram Courtyard
             </p>
           </div>
 
-          <div className="md:col-span-2 mt-2 pt-2 border-t border-gold/15">
-            <h4 className="font-cinzel font-bold text-terracotta-dark pb-1 mb-1 tracking-wider">
+          <div className="md:col-span-2 mt-2 pt-2 border-t border-green-medium/15">
+            <h4 className="font-cinzel font-bold text-pink-dark pb-1 mb-1 tracking-wider text-xs sm:text-sm">
               📍 VENUE ADDRESS
             </h4>
-            <p className="font-outfit font-semibold text-wood-dark text-sm sm:text-base">
+            <p className="font-outfit font-semibold text-green-darker text-sm sm:text-base">
               Madakottan ECR, Ramanathapuram
             </p>
-            <p className="font-outfit text-xs text-wood-light mt-0.5 leading-relaxed font-medium">
+            <p className="font-outfit text-xs text-green-dark mt-0.5 leading-relaxed font-medium">
               Rameswaram – Madurai Main Road (Behind Inji Tea Shop) – 623503
             </p>
           </div>
@@ -350,30 +350,30 @@ export default function InvitationCard() {
 
         {/* Temple Border Trim */}
         <div className="my-6">
-          <TempleBorder className="h-3 w-full text-gold-dark" />
+          <TempleBorder className="h-3 w-full text-green-dark" />
         </div>
 
         {/* Host Names / Family details */}
         <div className="text-center space-y-4">
-          <h4 className="font-cinzel font-bold text-xs uppercase tracking-widest text-wood-light">
+          <h4 className="font-cinzel font-bold text-xs uppercase tracking-widest text-green-dark">
             Cordially Invited By
           </h4>
           
-          <div className="space-y-4 border-b border-gold/25 pb-6">
+          <div className="space-y-4 border-b border-green-medium/25 pb-6">
             <div className="max-w-md mx-auto">
-              <span className="block font-outfit text-sm sm:text-base font-bold text-wood-dark">
-                Dr. Mahendran G. <span className="text-xs font-medium text-wood-light">ME, PhD</span>
+              <span className="block font-outfit text-sm sm:text-base font-bold text-green-darker">
+                Dr. Mahendran G. <span className="text-xs font-medium text-green-dark">ME, PhD</span>
               </span>
-              <span className="block text-[10px] font-cinzel text-gold-dark font-bold uppercase tracking-wider mt-0.5">
+              <span className="block text-[10px] font-cinzel text-green-dark font-bold uppercase tracking-wider mt-0.5">
                 HoD of ECE, Syed Ammal Engineering College
               </span>
             </div>
             
             <div className="max-w-md mx-auto">
-              <span className="block font-outfit text-sm sm:text-base font-bold text-wood-dark">
-                Mrs. Shyni S. L. <span className="text-xs font-medium text-wood-light">MA, MPhil, B.Ed</span>
+              <span className="block font-outfit text-sm sm:text-base font-bold text-green-darker">
+                Mrs. Shyni S. L. <span className="text-xs font-medium text-green-dark">MA, MPhil, B.Ed</span>
               </span>
-              <span className="block text-[10px] font-cinzel text-gold-dark font-bold uppercase tracking-wider mt-0.5">
+              <span className="block text-[10px] font-cinzel text-green-dark font-bold uppercase tracking-wider mt-0.5">
                 HoD of English, Velumanoharan Arts and Science College for Women
               </span>
             </div>
@@ -384,7 +384,7 @@ export default function InvitationCard() {
         <div className="mt-8 flex justify-center pointer-events-auto">
           <button
             onClick={downloadAsImage}
-            className="shine-effect px-8 py-3.5 bg-gradient-to-br from-gold-light via-gold to-gold-dark text-wood-dark border border-gold-light font-cinzel font-black tracking-widest text-xs rounded shadow-lg hover:shadow-gold-glow cursor-pointer transition-all duration-300 transform hover:scale-105 active:scale-95 uppercase flex items-center gap-2"
+            className="shine-effect px-6 py-3.5 sm:px-8 bg-gradient-to-br from-green-light via-green-medium to-green-dark text-green-darker border border-green-light font-cinzel font-black tracking-widest text-[10px] sm:text-xs rounded shadow-lg hover:shadow-gold-glow cursor-pointer transition-all duration-300 transform hover:scale-105 active:scale-95 uppercase flex items-center gap-2"
           >
             📥 Download Invitation Card (Image)
           </button>
@@ -396,30 +396,30 @@ export default function InvitationCard() {
           <div className="flex flex-col items-center">
             <div className="relative w-12 h-12 flex items-center justify-center">
               {/* Flame */}
-              <div className="diya-flame absolute -top-5 w-4 h-8 bg-gradient-to-t from-glow-dark via-glow to-gold-light rounded-full" />
-              {/* Brass Diya body */}
-              <svg className="w-12 h-8 text-gold-dark" viewBox="0 0 40 20" fill="currentColor">
+              <div className="diya-flame absolute -top-5 w-4 h-8 bg-gradient-to-t from-glow-dark via-glow to-gold-goldLight rounded-full" />
+              {/* Ceramic Green Diya body */}
+              <svg className="w-12 h-8 text-green-dark" viewBox="0 0 40 20" fill="currentColor">
                 <path d="M 0 5 C 10 20 30 20 40 5 C 38 15 2 15 0 5 Z" />
-                <ellipse cx="20" cy="5" rx="20" ry="4" fill="#aa7c11" />
-                <circle cx="20" cy="5" r="2" fill="#2b180a" />
+                <ellipse cx="20" cy="5" rx="20" ry="4" fill="#2e7d32" />
+                <circle cx="20" cy="5" r="2" fill="#0c2b11" />
               </svg>
             </div>
-            <span className="text-[10px] font-cinzel text-wood-light uppercase mt-1">Anbe Sivam</span>
+            <span className="text-[10px] font-cinzel text-green-dark uppercase mt-1">Anbe Sivam</span>
           </div>
 
           {/* Diya Right */}
           <div className="flex flex-col items-center">
             <div className="relative w-12 h-12 flex items-center justify-center">
               {/* Flame */}
-              <div className="diya-flame absolute -top-5 w-4 h-8 bg-gradient-to-t from-glow-dark via-glow to-gold-light rounded-full" />
-              {/* Brass Diya body */}
-              <svg className="w-12 h-8 text-gold-dark" viewBox="0 0 40 20" fill="currentColor">
+              <div className="diya-flame absolute -top-5 w-4 h-8 bg-gradient-to-t from-glow-dark via-glow to-gold-goldLight rounded-full" />
+              {/* Ceramic Green Diya body */}
+              <svg className="w-12 h-8 text-green-dark" viewBox="0 0 40 20" fill="currentColor">
                 <path d="M 0 5 C 10 20 30 20 40 5 C 38 15 2 15 0 5 Z" />
-                <ellipse cx="20" cy="5" rx="20" ry="4" fill="#aa7c11" />
-                <circle cx="20" cy="5" r="2" fill="#2b180a" />
+                <ellipse cx="20" cy="5" rx="20" ry="4" fill="#2e7d32" />
+                <circle cx="20" cy="5" r="2" fill="#0c2b11" />
               </svg>
             </div>
-            <span className="text-[10px] font-cinzel text-wood-light uppercase mt-1">Vaazhga Valamudan</span>
+            <span className="text-[10px] font-cinzel text-green-dark uppercase mt-1">Vaazhga Valamudan</span>
           </div>
         </div>
 

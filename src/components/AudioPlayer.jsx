@@ -152,7 +152,7 @@ export default function AudioPlayer({ isBellTriggered, onBellPlay }) {
       {/* Temple Bell Trigger Button */}
       <button
         onClick={ringTempleBell}
-        className="w-12 h-12 rounded-full bg-gold border border-gold-light text-wood-dark hover:text-terracotta flex items-center justify-center shadow-gold-glow cursor-pointer transition-all duration-300 transform hover:scale-110 active:scale-95 bg-gradient-to-br from-gold-light via-gold to-gold-dark hover:from-gold-dark hover:to-gold-light"
+        className="w-12 h-12 rounded-full bg-green border border-green-light text-green-darker hover:text-pink flex items-center justify-center shadow-gold-glow cursor-pointer transition-all duration-300 transform hover:scale-110 active:scale-95 bg-gradient-to-br from-green-light via-green to-green-dark hover:from-green-dark hover:to-green-light"
         title="Ring Temple Bell"
       >
         <Bell className="w-5 h-5 animate-pulse" />
@@ -161,7 +161,7 @@ export default function AudioPlayer({ isBellTriggered, onBellPlay }) {
       {/* Music Toggle Button */}
       <button
         onClick={toggleMusic}
-        className="w-12 h-12 rounded-full bg-terracotta text-beige border border-terracotta-light flex items-center justify-center shadow-lg cursor-pointer transition-all duration-300 transform hover:scale-110 active:scale-95 bg-gradient-to-br from-terracotta-light to-terracotta-dark"
+        className="w-12 h-12 rounded-full bg-pink text-pink-light border border-pink-medium flex items-center justify-center shadow-lg cursor-pointer transition-all duration-300 transform hover:scale-110 active:scale-95 bg-gradient-to-br from-pink-soft via-pink to-pink-dark"
         title={isPlaying ? "Mute Background Music" : "Play Background Music"}
       >
         {isPlaying ? (
@@ -173,7 +173,7 @@ export default function AudioPlayer({ isBellTriggered, onBellPlay }) {
 
       {/* Floating text prompt */}
       {!isPlaying && (
-        <div className="absolute right-28 bg-wood-dark/90 text-gold border border-gold/40 text-xs px-3 py-1.5 rounded-md font-cinzel tracking-wider whitespace-nowrap shadow-lg animate-pulse backdrop-blur-sm pointer-events-none">
+        <div className="absolute right-28 bg-green-darker/90 text-green-medium border border-green-medium/40 text-xs px-3 py-1.5 rounded-md font-cinzel tracking-wider whitespace-nowrap shadow-lg animate-pulse backdrop-blur-sm pointer-events-none">
           Click to hear Music & Bells 🪔
         </div>
       )}

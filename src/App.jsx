@@ -70,13 +70,13 @@ export default function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-beige-light text-wood-dark font-outfit antialiased selection:bg-gold/30">
+    <div className="relative min-h-screen bg-pink-light text-green-darker font-outfit antialiased selection:bg-pink-medium/30">
       
       {/* 1. FLOATING premium header navigation */}
-      <header className="fixed top-0 left-0 right-0 z-40 bg-wood-dark/95 md:bg-wood-dark/90 backdrop-blur-md border-b border-gold/25 py-4 px-4 sm:px-6 flex justify-between items-center shadow-lg">
+      <header className="fixed top-0 left-0 right-0 z-40 bg-green-darker/95 md:bg-green-darker/90 backdrop-blur-md border-b border-green-medium/25 py-4 px-4 sm:px-6 flex justify-between items-center shadow-lg">
         <div 
           onClick={() => handleScrollTo('hero')}
-          className="font-cinzel text-base sm:text-xl font-bold tracking-widest text-gold-light hover:text-gold cursor-pointer transition-colors duration-300 flex items-center gap-2 select-none"
+          className="font-cinzel text-base sm:text-xl font-bold tracking-widest text-green-medium hover:text-green-light cursor-pointer transition-colors duration-300 flex items-center gap-2 select-none"
         >
           🪔 SRI SUDALEE
         </div>
@@ -87,7 +87,7 @@ export default function App() {
             <button
               key={item.id}
               onClick={() => handleScrollTo(item.id)}
-              className="font-cinzel text-xs font-bold tracking-wider text-beige/85 hover:text-gold transition-colors duration-300 cursor-pointer uppercase py-1 border-b border-transparent hover:border-gold/60"
+              className="font-cinzel text-xs font-bold tracking-wider text-pink-soft/85 hover:text-green-medium transition-colors duration-300 cursor-pointer uppercase py-1 border-b border-transparent hover:border-green-medium/60"
             >
               {item.label}
             </button>
@@ -97,7 +97,7 @@ export default function App() {
         {/* Mobile Hamburguer Toggle */}
         <button 
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden text-gold hover:text-gold-light cursor-pointer p-1"
+          className="md:hidden text-green-medium hover:text-green-light cursor-pointer p-1"
           aria-label="Toggle Navigation Menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -106,12 +106,12 @@ export default function App() {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-30 bg-wood-dark/95 backdrop-blur-md flex flex-col justify-center items-center gap-8 md:hidden animate-fade-in">
+        <div className="fixed inset-0 z-30 bg-green-darker/95 backdrop-blur-md flex flex-col justify-center items-center gap-8 md:hidden animate-fade-in">
           {navItems.map((item) => (
             <button
               key={item.id}
               onClick={() => handleScrollTo(item.id)}
-              className="font-cinzel text-lg font-bold tracking-widest text-beige hover:text-gold transition-colors duration-300 uppercase cursor-pointer py-2 px-6 w-full text-center"
+              className="font-cinzel text-lg font-bold tracking-widest text-pink-soft hover:text-green-medium transition-colors duration-300 uppercase cursor-pointer py-2 px-6 w-full text-center"
             >
               {item.label}
             </button>
@@ -135,10 +135,10 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-wood-dark text-beige/40 text-center py-8 text-xs font-outfit border-t border-gold/15 relative z-20">
+      <footer className="bg-green-darker text-pink-medium/40 text-center py-8 text-xs font-outfit border-t border-green-medium/15 relative z-20">
         <p>© 2026 Sri Sudalee Family. All Rights Reserved.</p>
-        <p className="font-cinzel text-gold/30 text-[10px] tracking-widest uppercase mt-1">Auspicious Griha Pravesham Ceremony</p>
-        <p className="text-[10px] text-beige/35 hover:text-gold-light transition-colors duration-300 mt-2">
+        <p className="font-cinzel text-green-medium/30 text-[10px] tracking-widest uppercase mt-1">Auspicious Griha Pravesham Ceremony</p>
+        <p className="text-[10px] text-pink-medium/35 hover:text-green-light transition-colors duration-300 mt-2">
           Made by <span className="font-semibold tracking-wider font-cinzel">Blunar.co</span>
         </p>
       </footer>

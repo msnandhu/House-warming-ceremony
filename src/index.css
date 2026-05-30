@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-beige-light text-wood-dark font-outfit overflow-x-hidden;
+    @apply bg-pink-light text-green-darker font-outfit overflow-x-hidden;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -17,23 +17,23 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f5ebd5;
+  background: #fff0f3; /* pink-light */
 }
 ::-webkit-scrollbar-thumb {
-  background: #aa7c11;
+  background: #81c784; /* green-medium */
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #8b2617;
+  background: #880e4f; /* pink-dark */
 }
 
 /* Traditional glow animations */
 .gold-text-glow {
-  text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+  text-shadow: 0 0 10px rgba(233, 30, 99, 0.4); /* pink glow */
 }
 
 .gold-border-glow {
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 0 15px rgba(129, 199, 132, 0.3); /* green glow */
 }
 
 /* Diya flame flicker animation */
