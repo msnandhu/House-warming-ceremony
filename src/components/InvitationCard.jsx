@@ -138,7 +138,7 @@ export default function InvitationCard() {
     ctx.fillStyle = '#ffffff';
     ctx.font = 'bold 16px Arial, sans-serif';
     ctx.fillText('Sunday, June 7, 2026', 250, 570);
-    ctx.fillText('6:00 AM – 7:30 AM', 550, 570);
+    ctx.fillText('7:30 AM – 8:30 AM', 550, 570);
 
     ctx.fillStyle = '#ffebee';
     ctx.font = '13px Arial, sans-serif';
@@ -316,7 +316,7 @@ export default function InvitationCard() {
               🪔 MUHURTHAM
             </h4>
             <p className="font-outfit font-semibold text-green-darker text-sm sm:text-base">
-              Auspicious Muhurtham: 6:00 AM – 7:30 AM
+              Auspicious Muhurtham: 7:30 AM – 8:30 AM
             </p>
             <p className="font-outfit text-xs text-green-dark mt-1 font-medium">
               Morning (Vaikasi Month Valarpirai)
