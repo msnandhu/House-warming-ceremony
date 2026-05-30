@@ -172,21 +172,26 @@ export default function InvitationCard() {
     ctx.font = 'bold 13px Georgia, serif';
     ctx.fillText('CORDIALLY INVITED BY', 400, 835);
 
-    // Host 1 - Dr. Mahendran
+    // Row 1: Parents (Left / Right columns)
     ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 16px Arial, sans-serif';
-    ctx.fillText('Dr. Mahendran G. ME, PhD', 400, 875);
-    ctx.fillStyle = '#fbc02d';
-    ctx.font = 'bold 11px Georgia, serif';
-    ctx.fillText('HoD of ECE, Syed Ammal Engineering College', 400, 897);
+    ctx.font = 'bold 15px Arial, sans-serif';
+    ctx.fillText('Dr. Mahendran G. ME, PhD', 230, 875);
+    ctx.fillText('Mrs. Shyni S. L. MA, MPhil, B.Ed', 570, 875);
 
-    // Host 2 - Mrs. Shyni
-    ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 16px Arial, sans-serif';
-    ctx.fillText('Mrs. Shyni S. L. MA, MPhil, B.Ed', 400, 950);
     ctx.fillStyle = '#fbc02d';
-    ctx.font = 'bold 11px Georgia, serif';
-    ctx.fillText('HoD of English, Velumanoharan Arts and Science College for Women', 400, 972);
+    ctx.font = 'bold 10px Georgia, serif';
+    ctx.fillText('HoD of ECE, Syed Ammal Engineering College', 230, 895);
+    ctx.fillText('HoD of English, Velumanoharan Arts & Science College', 570, 895);
+
+    // Row 2: Sons (Left / Right columns)
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 15px Arial, sans-serif';
+    ctx.fillText('Mr. Nandhu S. Mahendran B.E', 230, 945);
+    ctx.fillText('Mr. Vishnu Mahendran', 570, 945);
+
+    ctx.fillStyle = '#fbc02d';
+    ctx.font = 'bold 10px Georgia, serif';
+    ctx.fillText('Founder & CEO, Blunar.Co', 230, 965);
 
     // 8. Draw Diyas at the bottom
     const drawDiya = (dx, dy) => {
@@ -359,23 +364,44 @@ export default function InvitationCard() {
             Cordially Invited By
           </h4>
           
-          <div className="space-y-4 border-b border-green-medium/25 pb-6">
-            <div className="max-w-md mx-auto">
-              <span className="block font-outfit text-sm sm:text-base font-bold text-green-darker">
-                Dr. Mahendran G. <span className="text-xs font-medium text-green-dark">ME, PhD</span>
-              </span>
-              <span className="block text-[10px] font-cinzel text-green-dark font-bold uppercase tracking-wider mt-0.5">
-                HoD of ECE, Syed Ammal Engineering College
-              </span>
+          <div className="space-y-6 border-b border-green-medium/25 pb-6">
+            {/* Parents */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-xl mx-auto">
+              <div>
+                <span className="block font-outfit text-sm sm:text-base font-bold text-green-darker">
+                  Dr. Mahendran G. <span className="text-xs font-medium text-green-dark">ME, PhD</span>
+                </span>
+                <span className="block text-[10px] font-cinzel text-green-dark font-bold uppercase tracking-wider mt-0.5">
+                  HoD of ECE, Syed Ammal Engineering College
+                </span>
+              </div>
+              
+              <div>
+                <span className="block font-outfit text-sm sm:text-base font-bold text-green-darker">
+                  Mrs. Shyni S. L. <span className="text-xs font-medium text-green-dark">MA, MPhil, B.Ed</span>
+                </span>
+                <span className="block text-[10px] font-cinzel text-green-dark font-bold uppercase tracking-wider mt-0.5">
+                  HoD of English, Velumanoharan Arts & Science College
+                </span>
+              </div>
             </div>
-            
-            <div className="max-w-md mx-auto">
-              <span className="block font-outfit text-sm sm:text-base font-bold text-green-darker">
-                Mrs. Shyni S. L. <span className="text-xs font-medium text-green-dark">MA, MPhil, B.Ed</span>
-              </span>
-              <span className="block text-[10px] font-cinzel text-green-dark font-bold uppercase tracking-wider mt-0.5">
-                HoD of English, Velumanoharan Arts and Science College for Women
-              </span>
+
+            {/* Sons */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-xl mx-auto pt-4 border-t border-green-medium/10">
+              <div>
+                <span className="block font-outfit text-sm sm:text-base font-bold text-green-darker">
+                  Mr. Nandhu S. Mahendran <span className="text-xs font-medium text-green-dark">B.E</span>
+                </span>
+                <span className="block text-[10px] font-cinzel text-green-dark font-bold uppercase tracking-wider mt-0.5">
+                  Founder & CEO, Blunar.Co
+                </span>
+              </div>
+              
+              <div>
+                <span className="block font-outfit text-sm sm:text-base font-bold text-green-darker pt-1">
+                  Mr. Vishnu Mahendran
+                </span>
+              </div>
             </div>
           </div>
         </div>
